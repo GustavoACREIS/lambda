@@ -25,8 +25,8 @@ public class ClienteModel {
         query += EMAIL+" TEXT, ";
         query += SENHA+" TEXT, ";
         query += PESSOAFISICA+" INTEGER, ";
-        query += DATAINC+" TEXT, ";
-        query += DATAALT+" TEXT ";
+        query += DATAINC+" datetime default current_timestamp, ";
+        query += DATAALT+" datetime default current_timestamp ";
 
 
 
