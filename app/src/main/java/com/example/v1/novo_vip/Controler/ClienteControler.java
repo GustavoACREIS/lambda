@@ -3,16 +3,12 @@ package com.example.v1.novo_vip.Controler;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
 import com.example.v1.novo_vip.BD.AppDataBase;
 import com.example.v1.novo_vip.BD.ClienteModel;
 import com.example.v1.novo_vip.model.Cliente;
-
-import java.util.List;
 
 public class ClienteControler extends AppDataBase {
 
@@ -59,9 +55,13 @@ public class ClienteControler extends AppDataBase {
         return delete(TABELA, obj.getId());
     }
 
-    public List<Cliente> listar(){
 
-        return list();
+
+
+    public String listar(String cliente) {
+
+
+        return  cliente;
     }
 }
 
