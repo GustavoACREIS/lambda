@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">App VIP</string>
+    <string name="txt_titulo">Aplicativo do Maddo</string>
+    <string name="btnCadastro">CADASTRAR</string>
+    <string name="txtLogin">Login</string>
+
+    <!-- formulário de cadastro de usuários -->
+
+    <string name="txtCadastro">Credencial de acesso</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtHintNome">Digite seu primeiro nome...</string>
+    <string name="txtEmail">E-mail</string>
+    <string name="txtHintEmail">Digite o seu melhor e-mail...</string>
+    <string name="txtSenhaA">Senha</string>
+    <string name="txtHintSenhaA">Informe uma senha...</string>
+    <string name="txtSenhaB">Repita a senha</string>
+    <string name="txtHintSenhaB">Confirme a senha digitada...</string>
+    <string name="txtTermo">Li e concordo com os termos de uso e política de privacidade.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+</resources>

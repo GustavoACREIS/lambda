@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.v1.novo_vip.MostrarDados">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="Mostrar Dados"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/txt3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/txt4"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/btnVoltar"
+        android:onClick="voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Voltar" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

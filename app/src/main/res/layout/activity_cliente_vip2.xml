@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.v1.novo_vip.ClienteVip2">
+
+<TextView
+android:id="@+id/txtAppName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="120dp"
+android:text="Cadastrar"
+android:textSize="36dp"
+android:textStyle="bold" />
+
+<TextView
+android:id="@+id/NovoCadastro"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="100dp"
+android:text="Novo Cadastro"
+android:textColor="#495595"
+android:textSize="30sp"
+android:textStyle="bold" />
+
+
+<TextView
+android:id="@+id/Email"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="16dp"
+android:text="Primeiro Nome"
+android:textColor="#ED78E14B"
+android:textStyle="bold" />
+
+<EditText
+android:id="@+id/editPrimeiroNome"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="16dp"
+android:layout_marginTop="8dp"
+android:layout_marginRight="16dp"
+android:ems="10"
+android:hint="Escreva seu primeiro nome..."
+/>
+
+<TextView
+android:id="@+id/Senha"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="16dp"
+android:text="Sobrenome"
+android:textColor="#ED78E14B"
+android:textStyle="bold" />
+
+<EditText
+android:id="@+id/editSenhaA"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="16dp"
+android:layout_marginTop="8dp"
+android:layout_marginRight="16dp"
+android:ems="10"
+android:hint="Escreva seu sobrenome.."
+ />
+
+
+    <CheckBox
+        android:id="@+id/ckPessoaFisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="pessoaFisica"
+        android:text="Pessoa Física"
+        android:textStyle="bold" />
+
+
+    <Button
+
+        android:id="@+id/btnSalvarContinua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Salvar e Continuar" />
+
+<Button
+android:id="@+id/btnCancelar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_marginLeft="16dp"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="16dp"
+android:text="Cancelar" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
