@@ -169,7 +169,6 @@ public class LoginActivity extends AppCompatActivity {
         controler.incluir(cliente);
         controler.alterar(cliente);
         controler.deletar(cliente);
-        List<Cliente> clientes = controler.listar();
         restaurarSharedPreferences();
 
 
