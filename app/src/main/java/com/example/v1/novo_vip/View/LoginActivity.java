@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +38,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText editSenhaA;
     CheckBox ckLembrar;
     Button acessar;
-    TextView  recuperar,sejavip, back, app;;
+    TextView  recuperar,sejavip;
+    ImageView back, app;;
     TextView termos;
 
 

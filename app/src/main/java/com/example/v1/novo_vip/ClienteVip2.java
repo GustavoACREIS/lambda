@@ -2,6 +2,7 @@ package com.example.v1.novo_vip;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.v1.novo_vip.View.AppUtil;
 import com.example.v1.novo_vip.View.LoginActivity;
@@ -26,13 +29,15 @@ public class ClienteVip2 extends AppCompatActivity {
     EditText editprimeiroNome, editSobrenome;
     Button btnSalvarContinuar, btnCancelar;
     CheckBox ckPessoaFisica;
+    ImageView image1;
+    TextView image2, image3;
 
     boolean isFormularioOk, isPessoaFisica;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cliente_vip2);
+        setContentView(R.layout.cliente_vip_3);
 
         initForms();
 
@@ -100,6 +105,7 @@ public class ClienteVip2 extends AppCompatActivity {
 
     }
 
+    @SuppressLint("WrongViewCast")
     private void initForms() {
 
         editprimeiroNome = findViewById(R.id.editPrimeiroNome);
@@ -107,6 +113,11 @@ public class ClienteVip2 extends AppCompatActivity {
         ckPessoaFisica = findViewById(R.id.ckPessoaFisica);
         btnSalvarContinuar = findViewById(R.id.btnSalvarContinua);
         btnCancelar = findViewById(R.id.btnCancelar);
+        image1 = findViewById(R.id.image1);
+        image2 = findViewById(R.id.app);
+        image3 = findViewById(R.id.txtNovoVip);
+
+
 
 
 
