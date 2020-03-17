@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.v1.novo_vip.View.AppUtil;
@@ -33,6 +34,7 @@ public class PessoaJuridica extends AppCompatActivity {
     EditText inpDate ;
     CheckBox ckSimplesNacional;
     CheckBox ckMei;
+    ImageView image1;
 
     boolean isFormularioOk, isSimplesNacional, isMei;
 
@@ -40,7 +42,7 @@ public class PessoaJuridica extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pessoa_juridica);
+        setContentView(R.layout.pessoajuridica2);
 
 
         initFormulario();
@@ -159,6 +161,8 @@ public class PessoaJuridica extends AppCompatActivity {
         btnSalved = findViewById(R.id.btnSalved);
         btnCancelar = findViewById(R.id.btnCancelar);
         btnVolte = findViewById(R.id.btnVolte);
+
+        image1 = findViewById(R.id.image1);
 
         ckMei = findViewById(R.id.ckMei);
         ckSimplesNacional = findViewById(R.id.ckSimplesNacional);
