@@ -36,8 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText editSenhaA;
     CheckBox ckLembrar;
     Button acessar;
-    Button sejavip;
-    TextView  recuperar;
+    TextView  recuperar,sejavip;;
     TextView termos;
 
 
@@ -50,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.layout_novo);
 
 
 

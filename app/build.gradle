@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.v1.novo_vip"
+        applicationId "com.example.v2.novo_vip"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
@@ -36,4 +36,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.1'
     implementation 'org.jetbrains:annotations-java5:15.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }
