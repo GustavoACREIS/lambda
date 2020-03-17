@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.v1.novo_vip.View.AppUtil;
@@ -30,6 +31,7 @@ public class PessoaFisica extends AppCompatActivity {
     private SharedPreferences preferences;
     EditText editCPF;
     EditText editNomeCompleto;
+    ImageView image1;
 
     boolean isFormularioOk, isPessoaFisica;
 
@@ -37,7 +39,7 @@ public class PessoaFisica extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pessoa_fisica);
+        setContentView(R.layout.pessoafisica2);
 
         initFormulario();
 
@@ -144,6 +146,7 @@ public class PessoaFisica extends AppCompatActivity {
         btnSalvar = findViewById(R.id.btnSalvar);
         btnCancel = findViewById(R.id.btnCancel);
         btnVoltar1 = findViewById(R.id.btnVoltar1);
+        image1 = findViewById(R.id.image2);
 
         isFormularioOk = false;
 
