@@ -2,6 +2,7 @@ package com.example.v1.novo_vip.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -36,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText editSenhaA;
     CheckBox ckLembrar;
     Button acessar;
-    TextView  recuperar,sejavip;;
+    TextView  recuperar,sejavip, back, app;;
     TextView termos;
 
 
@@ -148,6 +149,7 @@ public class LoginActivity extends AppCompatActivity {
         return retorno;
     }
 
+    @SuppressLint("WrongViewCast")
     private void initFormulario() {
 
 
@@ -158,6 +160,9 @@ public class LoginActivity extends AppCompatActivity {
         ckLembrar = findViewById(R.id.ckLembrar);
         editEmail = findViewById(R.id.editEmail);
         editSenhaA = findViewById(R.id.editSenhaA);
+        back = findViewById(R.id.imgBackground);
+        app = findViewById(R.id.txtAppName);
+
 
 
 

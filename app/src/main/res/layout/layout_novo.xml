@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,19 +7,23 @@
     tools:context="com.example.v1.novo_vip.View.LoginActivity">
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/imgBackground"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/app_cliente_vip_login_bg" />
     </RelativeLayout>
+
     <ImageView
         android:id="@+id/txtAppName"
-        android:text="@string/app_name"
-        android:layout_width="95dp"
-        android:layout_height="70dp"
+        android:layout_width="141dp"
+        android:layout_height="136dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        app:srcCompat="@drawable/icon" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
