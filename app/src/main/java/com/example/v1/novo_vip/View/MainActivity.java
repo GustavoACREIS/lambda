@@ -187,9 +187,9 @@ public class MainActivity extends AppCompatActivity {
         SenhaA = findViewById(R.id.digitPass);
         SenhaB = findViewById(R.id.digitPass2);
         btnCadastro = findViewById(R.id.btncadast);
-        ckCheck = findViewById(R.id.ckterm);
+        ckCheck = findViewById(R.id.ckCheck);
         btnVoltar = findViewById(R.id.btnVoltar);
-        image1 = findViewById(R.id.image22);
+        image1 = findViewById(R.id.image12);
 
         isFormularioOk = false;
 
