@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.v1.novo_vip.View.AppUtil;
@@ -19,6 +20,7 @@ public class RecuperarSenha extends AppCompatActivity {
     Button btnVoltar;
     Button btnRecuperar;
     EditText editEmail;
+    ImageView image1;
     private SharedPreferences preferences;
     boolean isFormularioOk;
 
@@ -27,7 +29,7 @@ public class RecuperarSenha extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recuperar_senha);
+        setContentView(R.layout.recuperar_senha2);
 
         initFormulario();
 
@@ -81,6 +83,7 @@ public class RecuperarSenha extends AppCompatActivity {
         editEmail = findViewById(R.id.editEmailA);
         btnRecuperar = findViewById(R.id.btnRecuperar);
         btnVoltar = findViewById(R.id.btnVoltar);
+        image1 = findViewById(R.id.logo1);
 
         restaurarSharedPreferences();
     }
