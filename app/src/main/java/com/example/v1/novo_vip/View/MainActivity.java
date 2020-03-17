@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editNome, editEmail, SenhaA, SenhaB;
     Button btnCadastro, btnVoltar;
     CheckBox ckCheck;
+    ImageView image1;
 
 
     private SharedPreferences preferences;
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main2);
         super.onCreate(savedInstanceState);
 
         clientePF = new ClientePF();
@@ -187,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
         btnCadastro = findViewById(R.id.btncadast);
         ckCheck = findViewById(R.id.ckterm);
         btnVoltar = findViewById(R.id.btnVoltar);
+        image1 = findViewById(R.id.image22);
 
         isFormularioOk = false;
 
