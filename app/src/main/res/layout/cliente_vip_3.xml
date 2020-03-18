@@ -152,6 +152,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/btncustom"
                 android:text="Salvar e Continuar" />
 
             <Button
@@ -161,6 +162,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/btncustom"
                 android:text="Cancelar" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>

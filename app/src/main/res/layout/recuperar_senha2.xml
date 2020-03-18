@@ -122,6 +122,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
                 android:text="Recuperar Senha"
+                android:background="@drawable/btncustom"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 
             <Button
@@ -132,6 +133,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
                 android:text="Voltar"
+                android:background="@drawable/btncustom"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>

@@ -181,6 +181,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/btncustom"
                 android:text="Salvar e Continuar"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large" />
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -209,6 +210,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:text="Voltar"
+                android:background="@drawable/btncustom"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large"
                 android:textSize="12sp" />
 
@@ -221,6 +223,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:text="Cancelar"
+                android:background="@drawable/btncustom"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large"
                 android:textSize="12sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>

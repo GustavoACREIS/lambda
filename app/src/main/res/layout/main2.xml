@@ -213,14 +213,14 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-
+                android:background="@drawable/btncustom"
                 android:text="Cadastrar "
                 android:textAppearance="@android:style/TextAppearance.Holo.Large"
                 android:textSize="10sp" />
 
             <Button
 
-
+                android:background="@drawable/btncustom"
                 android:id="@+id/btnVoltar"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_shadow_start_color"
+    android:background="@drawable/teladedadosgradual"
     android:orientation="vertical"
     tools:context="com.example.v1.novo_vip.TelaDeDados">
 
@@ -32,7 +32,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="100dp"
-        android:background="#3F4FAA"
+        android:background="@drawable/btncustom"
         android:onClick="mostrarDados"
         android:text="Meus dados" />
 
@@ -44,7 +44,7 @@
         android:layout_marginTop="20dp"
         android:onClick="AtualizarDados"
         android:layout_marginRight="100dp"
-        android:background="#3F4FAA"
+        android:background="@drawable/btncustom"
         android:text="Atualizar Dados" />
 
     <Button
@@ -55,7 +55,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="100dp"
-        android:background="#3F4FAA"
+        android:background="@drawable/btncustom"
         android:text="Excluir Conta" />
 
     <Button
@@ -66,7 +66,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="100dp"
-        android:background="#3F4FAA"
+        android:background="@drawable/btncustom"
         android:text="Consultar Clientes" />
 
     <Button
@@ -76,7 +76,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="100dp"
-        android:background="#3F4FAA"
+        android:background="@drawable/btncustom"
         android:onClick="SairApp"
         android:text="Sair do App" />
 
