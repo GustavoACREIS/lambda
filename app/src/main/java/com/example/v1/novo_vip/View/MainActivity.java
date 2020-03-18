@@ -27,7 +27,7 @@ import com.shashank.sony.fancydialoglib.Icon;
 
 public class MainActivity extends AppCompatActivity {
 
-    ClientePF clientePF;
+
     EditText editNome, editEmail, SenhaA, SenhaB;
     Button btnCadastro, btnVoltar;
     CheckBox ckCheck;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main2);
         super.onCreate(savedInstanceState);
 
-        clientePF = new ClientePF();
+
         initFormulario();
 
 
@@ -53,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
                 isFormularioOk = true;
                 validarsenha();
+                validarFormulario();
 
                 if (isFormularioOk = validarFormulario()) {
                     if (!validarsenha()) {
                         SenhaA.setError("*");
                         SenhaB.setError("*");
                         SenhaA.requestFocus();
+
 
                         new FancyAlertDialog.Builder(MainActivity.this)
                                 .setTitle("SENHAS")
@@ -98,7 +100,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private boolean validarsenha() {
 
-        boolean retorno = (Integer.parseInt(SenhaA.getText().toString()) == Integer.parseInt(SenhaB.getText().toString()));
+        boolean retorno;
+
+        retorno = (Integer.parseInt(SenhaA.getText().toString()) == Integer.parseInt(SenhaB.getText().toString()));
 
         return retorno;
     }
@@ -108,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         isPessoaFisica = preferences.getBoolean("PessoaFisica", true);
-        clientePF.setNomeCompleto(preferences.getString("nomeCompleto", "Null"));
+
 
 
     }
@@ -118,13 +122,6 @@ public class MainActivity extends AppCompatActivity {
 
         boolean retorno = true;
 
-        if (TextUtils.isEmpty(editNome.getText().toString())) {
-
-            editNome.setError("*");
-            editNome.requestFocus();
-            retorno = false;
-
-        }
 
         if (TextUtils.isEmpty(editEmail.getText().toString())) {
 
@@ -149,11 +146,14 @@ public class MainActivity extends AppCompatActivity {
             retorno = false;
 
         }
-
         if (!ckCheck.isChecked()) {
+
+            ckCheck.setError("*");
+            ckCheck.requestFocus();
             retorno = false;
-            Toast.makeText(getApplicationContext(), "É necessário LER os termos", Toast.LENGTH_LONG).show();
+
         }
+
 
         return retorno;
     }
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         btnCadastro = findViewById(R.id.btncadast);
         ckCheck = findViewById(R.id.ckCheck);
         btnVoltar = findViewById(R.id.btnVoltar);
-        image1 = findViewById(R.id.image12);
+        image1 = findViewById(R.id.image121);
 
         isFormularioOk = false;
 
