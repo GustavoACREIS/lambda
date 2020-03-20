@@ -63,6 +63,13 @@ public class ClienteControler extends AppDataBase {
 
         return  cliente;
     }
+
+    public int getUltimoID() {
+        return getLastPK(TABELA);
+    }
+
+
+
 }
 
 

@@ -45,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
 
     boolean isFormularioOk, isLembrarSenha;
 
-    ClienteControler controler;
 
 
 
@@ -170,11 +169,8 @@ public class LoginActivity extends AppCompatActivity {
 
         isFormularioOk = false;
         cliente = new Cliente();
-        controler = new ClienteControler(getApplicationContext());
 
-        controler.incluir(cliente);
-        controler.alterar(cliente);
-        controler.deletar(cliente);
+
         restaurarSharedPreferences();
 
 

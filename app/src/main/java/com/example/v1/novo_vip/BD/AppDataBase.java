@@ -171,5 +171,23 @@ public class AppDataBase extends SQLiteOpenHelper {
     }
 
 
+    public int getLastPK (String tabela) {
 
-}
+
+        String sql = "SELECT seq FROM sqlite_sequence WHERE name = ' " + tabela + " ' ";
+        cursor = db.rawQuery(sql, null);
+
+
+        if (cursor.moveToFirst()) {
+
+            do {
+
+
+                return cursor.getInt(cursor.getColumnIndex("seq"));
+
+
+            } while (cursor.moveToNext());
+        }
+        return  -1;
+    }
+    }

@@ -15,8 +15,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.v1.novo_vip.Controler.ClienteControler;
 import com.example.v1.novo_vip.View.AppUtil;
 import com.example.v1.novo_vip.View.LoginActivity;
+import com.example.v1.novo_vip.model.Cliente;
 import com.shashank.sony.fancydialoglib.Animation;
 import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 import com.shashank.sony.fancydialoglib.FancyAlertDialogListener;
@@ -24,13 +27,15 @@ import com.shashank.sony.fancydialoglib.Icon;
 
 public class ClienteVip2 extends AppCompatActivity {
 
-
+    Cliente novovip;
     private SharedPreferences preferences;
     EditText editprimeiroNome, editSobrenome;
     Button btnSalvarContinuar, btnCancelar;
     CheckBox ckPessoaFisica;
     ImageView image1;
     TextView image2, image3;
+    ClienteControler controler;
+    int ultimoID;
 
     boolean isFormularioOk, isPessoaFisica;
 
@@ -46,10 +51,19 @@ public class ClienteVip2 extends AppCompatActivity {
             public void onClick(View v) {
                 if(isFormularioOk = validarFormulario()){
 
+                    novovip.setPessoaFisica(isPessoaFisica);
+                    novovip.setPrimeiroNome(editprimeiroNome.getText().toString());
+                    novovip.setSobreNome(editSobrenome.getText().toString());
 
 
+                    controler.incluir(novovip);
 
+                    ultimoID = controler.getUltimoID();
                     salvarSharedPreferences();
+
+
+
+
                     if(isPessoaFisica){
                         Intent intent =new Intent(ClienteVip2.this, PessoaFisica.class);
                         startActivity(intent);
@@ -117,6 +131,9 @@ public class ClienteVip2 extends AppCompatActivity {
         image2 = findViewById(R.id.app);
         image3 = findViewById(R.id.txtNovoVip);
 
+         controler = new ClienteControler(this);
+         novovip = new Cliente();
+
 
 
 
@@ -163,6 +180,7 @@ public class ClienteVip2 extends AppCompatActivity {
         dados.putString("primeiroNome",editprimeiroNome.getText().toString());
         dados.putString("Sobrenome",editSobrenome.getText().toString());
         dados.putBoolean("PessoaFisica",isPessoaFisica);
+        dados.putInt("utimoID", ultimoID);
 
         dados.apply();
 
